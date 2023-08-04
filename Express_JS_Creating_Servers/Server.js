@@ -22,6 +22,44 @@ app.get('/downloads',(request, response)=>{
     response.download(path.join(__dirname,'First_Program.pdf'));
 });
 
+let profile = {
+    "login": "chandusayhi",
+    "id": 17869072,
+    "node_id": "MDQ6VXNlcjE3ODY5MDcy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17869072?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chandusayhi",
+    "html_url": "https://github.com/chandusayhi",
+    "followers_url": "https://api.github.com/users/chandusayhi/followers",
+    "following_url": "https://api.github.com/users/chandusayhi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chandusayhi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chandusayhi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chandusayhi/subscriptions",
+    "organizations_url": "https://api.github.com/users/chandusayhi/orgs",
+    "repos_url": "https://api.github.com/users/chandusayhi/repos",
+    "events_url": "https://api.github.com/users/chandusayhi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chandusayhi/received_events",
+    "type": "User",
+    "site_admin": false,
+    "name": "Chandrakant Hatti",
+    "company": "Freelancer",
+    "blog": "",
+    "location": "GADAG",
+    "email": null,
+    "hireable": null,
+    "bio": "Data is ruling the World. Rule the World with the Analysis and presentation of Data you have.",
+    "twitter_username": null,
+    "public_repos": 46,
+    "public_gists": 0,
+    "followers": 87,
+    "following": 3,
+    "created_at": "2016-03-16T04:21:32Z",
+    "updated_at": "2023-07-19T12:59:48Z"
+  };
+
+  app.get('/profile',(request,response) => {
+    response.json(profile);
+  });
 
 app.listen(port, hostname, () => {
     console.log(`Express Server is Started at http://${hostname}:${port}`);
