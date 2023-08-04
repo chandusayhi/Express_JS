@@ -1,0 +1,8 @@
+package.json -> configuration of the files
+server.js -> for server creation
+[public] -> for static files
+[router] -> for application routing
+[views] -> for presentaion files
+[models] -> for database tables/models
+[middleware] -> for application middleware
+[db] -> database configuration
