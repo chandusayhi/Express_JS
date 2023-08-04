@@ -18,6 +18,11 @@ app.get('/json',(request, response) => {
     response.json(models);
 });
 
+app.get('/downloads',(request, response)=>{
+    response.download(path.join(__dirname,'First_Program.pdf'));
+});
+
+
 app.listen(port, hostname, () => {
     console.log(`Express Server is Started at http://${hostname}:${port}`);
 });
